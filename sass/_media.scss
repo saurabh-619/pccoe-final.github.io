@@ -2,7 +2,12 @@
     // Redirect 
     .preloader {    
         display: flex;
-        padding: 0 0rem 0 5rem;
+        // padding: 0 0rem 0 5rem;
+        
+        // changes
+        justify-content: center;
+        align-items: center;
+
         & img { 
             position: absolute;
             top: 0; 
@@ -10,6 +15,9 @@
             height: 40%;  
             width: 60%;  
             display: block ;   
+
+            // changes
+            left: 5.4rem;
         }
 
         & .content { 
@@ -398,6 +406,10 @@
                             text-align: left;
                         }
                     }
+                }
+
+                br.kevin {
+                    display: block;
                 }
             }
         }
@@ -927,7 +939,7 @@
             position: relative; 
             font-size: 1rem;
             & a { 
-                margin: 0 1rem; 
+                margin: 0 .5rem; 
             }
         }
     }
