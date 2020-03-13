@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
 
-
 @import 'config';
 @import 'utilities';
+@import 'redirect';
 
 * {
     margin: 0;
@@ -306,5 +306,4 @@ header {
     display: none;
 }
 @import 'main2';
-@import 'redirect';
 @import 'media';
