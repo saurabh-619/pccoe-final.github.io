@@ -464,6 +464,7 @@
     #mentors {  
     
         & .heading {     
+            position: relative;
             bottom: 2rem;
             & h2 {
                 font-size: 2.6rem;
@@ -478,7 +479,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-    
+            position: relative;
+            bottom: 3rem;
             & .mycard {   
                 height: 250px;
                 width: 300px;   
@@ -605,7 +607,7 @@
     & .team-title { 
         margin-bottom: 2rem;
         & h2 {
-            font-size: 2.9rem;
+            font-size: 2.6rem;
         }
         
     }
