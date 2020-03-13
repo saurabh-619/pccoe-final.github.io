@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1380px) and (min-width: 800px)  {
+
+    header {   
+
+        #section-b {
+            text-align: center;
+            h1 { 
+                font-size: 4.4rem;
+            }
+        }        
+    }
+
+    // Header ends here
+
+    
+    // About us
+    #about { 
+        
+        .about-content { 
+
+            & .team-btn-div { 
+                & .team-btn {
+                    height: 30%;
+                    width: 30%;                    
+                } 
+            }
+        }
+ 
+    }
+    // About us ends
+    
+    // mentor starts
+    #mentors { 
+        & .heading {     
+            & h2 { 
+                font-size: 2.6rem;
+            } 
+        }
+        & .cards { 
+            position: relative;
+            bottom: 2rem;
+
+            & .mycard {   
+                height: 370px;
+                width: 320px;   
+
+                & .front {   
+                    & .image { 
+                        & img { 
+                            width: 220px;  
+                            height: 220px;
+                        } 
+                    } 
+
+                } 
+            }
+
+        } 
+    }
+
+    // mentor ends here
+    #events {
+        height: 100vh;   
+        .events-wrapper {   
+
+            & .upcoming { 
+                & .mycard { 
+                    margin-top: 2.8rem;
+                    width: 22vw;  
+    
+                    & .upcomingImg {
+                        display: flex;
+                        justify-content: center;
+                        &  img{ 
+                            left: 0%; 
+                        }
+                    }                     
+                }
+            }   
+    
+        } 
+     
+    }
+    
+    // upcoming Events ends
+    // Team starts
+    #team {
+        & .swiper-container2 {  
+            & .swiper-wrapper { 
+                & .swiper-slide {  
+                    & .box { 
+                        & .box-img { 
+                            & img {
+                            width: 250px;  
+                            height: 250px; 
+                            } 
+                        }   
+                    } 
+                }
+            }
+        }
+    }
+
+    // Team ends here
+
+    
+// Footer starts
+#footer {
+    height: 70vh; 
+    & .cell-info {    
+        width: 350px;
+        & .cell-logo {
+            & h5 {
+                font-size: 2.2rem; 
+            }
+        }
+        & .vision {
+            font-size: 1.0rem; 
+        } 
+    }
+
+    & .contact-us {   
+        width: 500px;   
+    }
+
+    & .copywrite {    
+        bottom: 0rem; 
+    }
+}
+
+// Footer ends here
+     
+}
