@@ -8,47 +8,63 @@ $bar-color: #fff;
 $ball-color: #fff;
 $bg-color: #EA4961;
 
- 
-.preloader { 
-    position: relative; 
+  
+@media  screen and (max-width:786px) {
+  .preloader {    
     display: flex;
-    padding: 2rem 2rem;
-    & img {
-        grid-area: img;
-        margin-top: 5rem;
-        height: 90%;  
+    // padding: 0 0rem 0 5rem;
+    
+    // changes
+    justify-content: center;
+    align-items: center;
+
+    & img { 
+        position: absolute;
+        top: 0; 
+        margin: auto; 
+        height: 40%;  
         width: 60%;  
-        display: inline-block;   
+        display: block ;   
+
+        // changes
+        left: 5.4rem;
     }
 
     & .content { 
-        position: absolute;
-        top: 200px;
-        right: 30px;  
+        position: absolute; 
+        top: 230px;
+        right: 100px;  
         width: 40%;
 
-         
+        
         & .info { 
             position: relative;
-            top: 150px;
+            top: 160px;
             margin-top: 2rem;
-            text-align: center;
+            text-align: center;  
 
-            & i {
+            & i { 
                 font-size: 3rem;
                 margin-bottom: 0;
             }
-            & .text { 
-                padding-top: 0;
-                font-size: 2rem;
+            & .text {  
+                text-align: center;
+                width: 250px; 
+                font-size: 1.8rem;
+                position: relative;
+                right: 3.5rem; 
+
+                & p {
+                    color: $special-color;
+                }
             }
         }
     }
 
-    
-}
- 
-.preloader {
+      
+  }
+
+  .preloader {
     width: 100%;
     height: 30vh; 
     background: $tertiary-color;
@@ -59,7 +75,69 @@ $bg-color: #EA4961;
     height: 100%; 
     transition: all 1s ease;
     display: block; 
+
+    }
+
 }
+
+
+
+@media only screen and (min-width:900px)
+{
+  .preloader { 
+      position: relative; 
+      display: flex;
+      padding: 2rem 2rem;
+      & img {
+          grid-area: img;
+          margin-top: 5rem;
+          height: 90%;  
+          width: 60%;  
+          display: inline-block;   
+      }
+  
+      & .content { 
+          position: absolute;
+          top: 200px;
+          right: 30px;  
+          width: 40%;
+  
+           
+          & .info { 
+              position: relative;
+              top: 150px;
+              margin-top: 2rem;
+              text-align: center;
+  
+              & i {
+                  font-size: 3rem;
+                  margin-bottom: 0;
+              }
+              & .text { 
+                  padding-top: 0;
+                  font-size: 2rem;
+              }
+          }
+      }
+  
+      
+  }
+   
+  .preloader {
+      width: 100%;
+      height: 30vh; 
+      background: $tertiary-color;
+      position: fixed;
+      z-index: 333;
+      top: 0;
+      left: 0; 
+      height: 100%; 
+      transition: all 1s ease;
+      display: block; 
+  }
+
+}
+ 
  
 @font-face {
     font-family: 'Open Sans';
@@ -1231,76 +1309,4 @@ $bg-color: #EA4961;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-
-  
-@media  screen and (max-width:786px) {
-  .preloader {    
-    display: flex;
-    // padding: 0 0rem 0 5rem;
-    
-    // changes
-    justify-content: center;
-    align-items: center;
-
-    & img { 
-        position: absolute;
-        top: 0; 
-        margin: auto; 
-        height: 40%;  
-        width: 60%;  
-        display: block ;   
-
-        // changes
-        left: 5.4rem;
-    }
-
-    & .content { 
-        position: absolute; 
-        top: 230px;
-        right: 100px;  
-        width: 40%;
-
-        
-        & .info { 
-            position: relative;
-            top: 160px;
-            margin-top: 2rem;
-            text-align: center;  
-
-            & i { 
-                font-size: 3rem;
-                margin-bottom: 0;
-            }
-            & .text {  
-                text-align: center;
-                width: 250px; 
-                font-size: 1.8rem;
-                position: relative;
-                right: 3.5rem; 
-
-                & p {
-                    color: $special-color;
-                }
-            }
-        }
-    }
-
-      
-  }
-
-  .preloader {
-    width: 100%;
-    height: 30vh; 
-    background: $tertiary-color;
-    position: fixed;
-    z-index: 333;
-    top: 0;
-    left: 0; 
-    height: 100%; 
-    transition: all 1s ease;
-    display: block; 
-
-    }
-
-}
 
